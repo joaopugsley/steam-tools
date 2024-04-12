@@ -2,7 +2,7 @@ import Image from "next/legacy/image";
 
 export function Grid() {
   return (
-    <div id="grid" className="absolute top-0 left-0 w-screen h-screen z-0 select-none">
+    <div className="absolute top-0 left-0 w-full h-screen z-0 select-none">
       <Image
         src="/img/graphic/grid.svg"
         alt="grid"
