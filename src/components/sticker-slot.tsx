@@ -29,7 +29,7 @@ export function StickerSlot({ stickers, currentSticker, updateSticker }: { stick
                 title={currentSticker.name}
                 width={80}
                 height={80}
-                className="w-20 h-20 anim-scale-in"
+                className="w-20 h-20 object-contain anim-scale-in select-none"
               />
               <div className="absolute top-0 right-2 p-0.5" onClick={() => updateSticker()}>
                 <span className="select-none text-gray-150">x</span>
@@ -66,7 +66,7 @@ export function StickerSlot({ stickers, currentSticker, updateSticker }: { stick
                   onClick={() => updateSticker(sticker)}
                   width={32}
                   height={32}
-                  className="w-8 h-8 object-none sm:hover:scale-110 select-none"
+                  className="w-8 h-8 object-contain sm:hover:scale-110 select-none"
                 />
               ))
           }
