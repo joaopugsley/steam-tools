@@ -20,7 +20,7 @@ export default function Price() {
     const currentValue = inputVal.replace(/[^0-9,.]/g, '').replaceAll(",", ".");
     const val = Math.round(Number(currentValue) * 100);
     const priceLink = createPriceLink(val);
-    window.open(priceLink, "_blank");
+    window.open(priceLink, "_blank", "noopener,noreferrer");
   };
 
   return (
