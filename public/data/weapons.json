@@ -1,142 +1,177 @@
 [
     {
         "name": "AK-47",
-        "class": "Rifles"
+        "class": "Rifles",
+        "id": "tag_weapon_ak47"
     },
     {
         "name": "M4A4",
-        "class": "Rifles"
+        "class": "Rifles",
+        "id": "tag_weapon_m4a1"
     },
     {
         "name": "M4A1-S",
-        "class": "Rifles"
+        "class": "Rifles",
+        "id": "tag_weapon_m4a1_silencer"
     },
     {
         "name": "Galil AR",
-        "class": "Rifles"
+        "class": "Rifles",
+        "id": "tag_weapon_galilar"
     },
     {
         "name": "FAMAS",
-        "class": "Rifles"
+        "class": "Rifles",
+        "id": "tag_weapon_famas"
     },
     {
         "name": "SG 553",
-        "class": "Rifles"
+        "class": "Rifles",
+        "id": "tag_weapon_sg556"
     },
     {
         "name": "AUG",
-        "class": "Rifles"
+        "class": "Rifles",
+        "id": "tag_weapon_aug"
     },
     {
         "name": "MP9",
-        "class": "SMGs"
+        "class": "SMGs",
+        "id": "tag_weapon_mp9"
     },
     {
         "name": "MP5-SD",
-        "class": "SMGs"
+        "class": "SMGs",
+        "id": "tag_weapon_mp5sd"
     },
     {
         "name": "MP7",
-        "class": "SMGs"
+        "class": "SMGs",
+        "id": "tag_weapon_mp7"
     },
     {
         "name": "UMP-45",
-        "class": "SMGs"
+        "class": "SMGs",
+        "id": "tag_weapon_ump45"
     },
     {
         "name": "PP-Bizon",
-        "class": "SMGs"
+        "class": "SMGs",
+        "id": "tag_weapon_bizon"
     },
     {
         "name": "MAC-10",
-        "class": "SMGs"
+        "class": "SMGs",
+        "id": "tag_weapon_mac10"
     },
     {
         "name": "P90",
-        "class": "SMGs"
+        "class": "SMGs",
+        "id": "tag_weapon_p90"
     },
     {
         "name": "M249",
-        "class": "Heavy"
+        "class": "Heavy",
+        "id": "tag_weapon_m249"
     },
     {
         "name": "Negev",
-        "class": "Heavy"
+        "class": "Heavy",
+        "id": "tag_weapon_negev"
     },
     {
         "name": "Glock-18",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_glock"
     },
     {
         "name": "USP-S",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_usp_silencer"
     },
     {
         "name": "P2000",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_hkp2000"
     },
     {
         "name": "Dual Berettas",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_elite"
     },
     {
         "name": "P250",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_p250"
     },
     {
         "name": "Tec-9",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_tec9"
     },
     {
         "name": "Five-SeveN",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_fiveseven"
     },
     {
         "name": "CZ75-Auto",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_cz75a"
     },
     {
         "name": "Desert Eagle",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_deagle"
     },
     {
         "name": "R8 Revolver",
-        "class": "Pistols"
+        "class": "Pistols",
+        "id": "tag_weapon_revolver"
     },
     {
         "name": "AWP",
-        "class": "Sniper Rifles"
+        "class": "Sniper Rifles",
+        "id": "tag_weapon_awp"
     },
     {
         "name": "SCAR-20",
-        "class": "Sniper Rifles"
+        "class": "Sniper Rifles",
+        "id": "tag_weapon_scar20"
     },
     {
         "name": "G3SG1",
-        "class": "Sniper Rifles"
+        "class": "Sniper Rifles",
+        "id": "tag_weapon_g3sg1"
     },
     {
         "name": "SSG 08",
-        "class": "Sniper Rifles"
+        "class": "Sniper Rifles",
+        "id": "tag_weapon_ssg08"
     },
     {
         "name": "Nova",
-        "class": "Shotguns"
+        "class": "Shotguns",
+        "id": "tag_weapon_nova"
     },
     {
         "name": "XM1014",
-        "class": "Shotguns"
+        "class": "Shotguns",
+        "id": "tag_weapon_xm1014"
     },
     {
         "name": "Sawed-Off",
-        "class": "Shotguns"
+        "class": "Shotguns",
+        "id": "tag_weapon_sawedoff"
     },
     {
         "name": "Mag-7",
-        "class": "Shotguns"
+        "class": "Shotguns",
+        "id": "tag_weapon_mag7"
     },
     {
         "name": "Zeus x27",
-        "class": "Equipment"
+        "class": "Equipment",
+        "id": "tag_weapon_taser"
     }
 ]
