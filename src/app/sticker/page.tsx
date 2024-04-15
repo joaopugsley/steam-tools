@@ -29,7 +29,7 @@ export default function StickerSearch() {
     return stickerData.map(sticker => ({ ...sticker, name: sticker.name.replace("Sticker | ", "")}));
   }, [stickerData]);
 
-  const [currentWeapon, setCurrentWeapon] = useState<string>("Any Weapon");
+  const [currentWeapon, setCurrentWeapon] = useState<string>("any");
   const [ignoreStickerOrder, setIgnoreStickerOrder] = useState<boolean>(false);
 
   const [currentStickers, setCurrentStickers] = useState<Record<number, Sticker | undefined>>([]);
@@ -40,6 +40,16 @@ export default function StickerSearch() {
       [slot]: sticker
     }))
   }
+
+  const handleButtonClick = () => {
+    const encodedStickers = Object.entries(currentStickers)
+      .filter(([_, sticker]) => sticker !== undefined)
+      .map(([_, sticker]) => sticker && encodeURI(sticker.name))
+      .join(ignoreStickerOrder ? `"+"` : `,`);
+
+    const searchLink = `https://steamcommunity.com/market/search?q="${encodedStickers}"&descriptions=1&category_730_ItemSet%5B%5D=any&category_730_Weapon%5B%5D=${currentWeapon}&category_730_Quality%5B%5D=#p1_price_asc`;
+    window.open(searchLink, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section className="w-full min-h-screen flex flex-col justify-center items-center p-8">
@@ -52,20 +62,20 @@ export default function StickerSearch() {
           value={currentWeapon}
           onChange={(e) => setCurrentWeapon(e.target.value)}
         >
-          <option value="Any Weapon" className="bg-zinc-900 text-white text-sm">Any Weapon</option>
-          <option className="bg-zinc-900 text-white" disabled>---</option>
+          <option value="any" className="bg-zinc-900 text-white text-sm">Any Weapon</option>
+          <option className="bg-zinc-900 text-white" disabled>--- Rifles</option>
           {
             weaponData.map((weapon, i) => (
               <Fragment key={weapon.name}>
                 {
                   i > 0 && weaponData[i - 1].class !== weapon.class && (
                     <option className="bg-zinc-900 text-white" disabled>
-                      ---
+                      --- {weapon.class}
                     </option>
                   )
                 }
                 <option
-                  value={weapon.name}
+                  value={weapon.id}
                   className="bg-zinc-900 text-white text-sm"
                 >
                   {weapon.name}
@@ -76,7 +86,7 @@ export default function StickerSearch() {
         </select>
         <div className="w-full flex flex-col space-y-4">
           {
-            [0, 1, 2, 3].map(slot => (
+            [0, 1, 2, 3, 4].map(slot => (
               <StickerSlot
                 key={slot} 
                 stickers={filteredStickers} 
@@ -90,7 +100,7 @@ export default function StickerSearch() {
           <input type="checkbox" className="size-3" checked={ignoreStickerOrder} onChange={() => setIgnoreStickerOrder((prev) => !prev)}/>
           <span className="select-none">Ignore sticker order</span>
         </label>
-        <button className="w-full bg-zinc-800 hover:bg-zinc-700 transition-all px-4 py-2 rounded-md border border-zinc-800 select-none">SEARCH</button>
+        <button onClick={() => handleButtonClick()} className="w-full bg-zinc-800 hover:bg-zinc-700 transition-all px-4 py-2 rounded-md border border-zinc-800 select-none">SEARCH</button>
       </div>
       <Grid/>
     </section>
