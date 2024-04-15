@@ -41,3 +41,38 @@ img {
   -moz-user-drag: none;
   -o-user-drag: none;
 }
+
+.scrollbar-x::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-x::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.10);
+}
+
+.scrollbar-x::-webkit-scrollbar-thumb {
+  background: rgb(37, 99, 235);
+  border-radius: 0.5rem;
+}
+
+.scrollbar-x::-webkit-scrollbar-thumb:hover {
+  background: rgb(96, 165, 250);
+}
+
+.anim-scale-in {
+  animation: scale-in ease-in-out forwards 400ms;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.4);
+    opacity: 20%;
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 100%;
+  }
+}
