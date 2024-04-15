@@ -1,0 +1,142 @@
+[
+    {
+        "name": "AK-47",
+        "class": "Rifles"
+    },
+    {
+        "name": "M4A4",
+        "class": "Rifles"
+    },
+    {
+        "name": "M4A1-S",
+        "class": "Rifles"
+    },
+    {
+        "name": "Galil AR",
+        "class": "Rifles"
+    },
+    {
+        "name": "FAMAS",
+        "class": "Rifles"
+    },
+    {
+        "name": "SG 553",
+        "class": "Rifles"
+    },
+    {
+        "name": "AUG",
+        "class": "Rifles"
+    },
+    {
+        "name": "MP9",
+        "class": "SMGs"
+    },
+    {
+        "name": "MP5-SD",
+        "class": "SMGs"
+    },
+    {
+        "name": "MP7",
+        "class": "SMGs"
+    },
+    {
+        "name": "UMP-45",
+        "class": "SMGs"
+    },
+    {
+        "name": "PP-Bizon",
+        "class": "SMGs"
+    },
+    {
+        "name": "MAC-10",
+        "class": "SMGs"
+    },
+    {
+        "name": "P90",
+        "class": "SMGs"
+    },
+    {
+        "name": "M249",
+        "class": "Heavy"
+    },
+    {
+        "name": "Negev",
+        "class": "Heavy"
+    },
+    {
+        "name": "Glock-18",
+        "class": "Pistols"
+    },
+    {
+        "name": "USP-S",
+        "class": "Pistols"
+    },
+    {
+        "name": "P2000",
+        "class": "Pistols"
+    },
+    {
+        "name": "Dual Berettas",
+        "class": "Pistols"
+    },
+    {
+        "name": "P250",
+        "class": "Pistols"
+    },
+    {
+        "name": "Tec-9",
+        "class": "Pistols"
+    },
+    {
+        "name": "Five-SeveN",
+        "class": "Pistols"
+    },
+    {
+        "name": "CZ75-Auto",
+        "class": "Pistols"
+    },
+    {
+        "name": "Desert Eagle",
+        "class": "Pistols"
+    },
+    {
+        "name": "R8 Revolver",
+        "class": "Pistols"
+    },
+    {
+        "name": "AWP",
+        "class": "Sniper Rifles"
+    },
+    {
+        "name": "SCAR-20",
+        "class": "Sniper Rifles"
+    },
+    {
+        "name": "G3SG1",
+        "class": "Sniper Rifles"
+    },
+    {
+        "name": "SSG 08",
+        "class": "Sniper Rifles"
+    },
+    {
+        "name": "Nova",
+        "class": "Shotguns"
+    },
+    {
+        "name": "XM1014",
+        "class": "Shotguns"
+    },
+    {
+        "name": "Sawed-Off",
+        "class": "Shotguns"
+    },
+    {
+        "name": "Mag-7",
+        "class": "Shotguns"
+    },
+    {
+        "name": "Zeus x27",
+        "class": "Equipment"
+    }
+]
