@@ -12,14 +12,14 @@ export default function Price() {
     setInputVal(`R$${numericValue}`);
   };
 
-  const createPriceLink = (value: Number) => {
+  const buildPriceLink = (value: Number) => {
     return `https://store.steampowered.com/steamaccount/addfunds?marketlisting=1&minneeded=${value}&returnurl=https://steamcommunity.com/market/`;
   };
 
   const handleButtonClick = () => {
     const currentValue = inputVal.replace(/[^0-9,.]/g, '').replaceAll(",", ".");
     const val = Math.round(Number(currentValue) * 100);
-    const priceLink = createPriceLink(val);
+    const priceLink = buildPriceLink(val);
     window.open(priceLink, "_blank", "noopener,noreferrer");
   };
 
