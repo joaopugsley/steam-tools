@@ -13,6 +13,7 @@ export default function StickerSearch() {
 
   useEffect(() => {
     const fetchStickerData = async () => {
+      // https://cs-sticker.com/stickers.json
       const response = await fetch('/data/stickers.json');
       const data = await response.json();
       setStickerData(data);
