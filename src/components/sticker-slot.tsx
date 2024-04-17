@@ -55,7 +55,13 @@ export function StickerSlot({ stickers, currentSticker, updateSticker }: { stick
                   .replaceAll("| ", "")
                   .replaceAll("(", "")
                   .replaceAll(")", "")
-                  .includes(currentSearch.toLowerCase())
+                  .includes(
+                    currentSearch
+                      .toLowerCase()
+                      .replaceAll("| ", "")
+                      .replaceAll("(", "")
+                      .replaceAll(")", "")
+                  )
               )
               .map(sticker => (
                 <Image
